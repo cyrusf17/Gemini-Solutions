@@ -1,0 +1,14 @@
+import java.io.*;
+class Gem extends Thread {
+    public void run()
+    {
+        System.out.print("Welcome to GeeksforGeeks.");
+    }
+        System.out.println(
+            "Current Thread Name: "+ Thread.currentThread().getName());
+    public static void main(String[] args)
+    {
+        Gem g = new Gem(); 
+        g.start();
+    }
+}
