@@ -1,0 +1,17 @@
+import java.io.*;
+class Gemini implements Runnable {
+    public static void main(String args[])
+    {
+        Gemini gem= new Gemini();
+  
+        Thread t = new Thread(gem, "gem");
+  
+        t.start();
+  
+        System.out.println(t.getName());
+    }
+    @Override public void run()
+    {
+        System.out.println("run method");
+    }
+}
